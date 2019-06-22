@@ -1,3 +1,5 @@
+import sys
+
 if __name__ == "__main__":
     s = []
     s.append(1)
