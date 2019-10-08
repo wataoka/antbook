@@ -8,9 +8,9 @@ for i in range(N):
 W = int(input())
 
 # dp[i][j]は重さjまで入れていい状況においてi番目までの最適なvalueを保証している。
-dp = [[0]*(W+1) for i in range(N)]
+dp = [[0]*(W+1) for i in range(N+1)]
 
-for i in range(N-1):
+for i in range(N):
     for j in range(W+1):
         if w[i] > j:
             dp[i+1][j] = dp[i][j]
